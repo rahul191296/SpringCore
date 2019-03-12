@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd ">
+
+<bean id="bean1" class="com.cognizant.springbean.Bean">
+ 
+</bean>
+<bean id="bean2" class="com.cognizant.springbean.Bean2" scope="prototype">
+</bean>
+<bean id="bean3" class="com.cognizant.springbean.Bean3">
+
+</bean>
+
+<bean id="bean31" class="com.cognizant.springbean.Bean31" scope="prototype">	
+</bean>
+<bean id="bean4" class="com.cognizant.springbean.Bean4" init-method="initMethod" destroy-method="destroyMethod">
+
+</bean>
+<bean id="bean5" class="com.cognizant.springbean.Bean5" factory-method="createInstance">
+
+</bean>
+</beans>
